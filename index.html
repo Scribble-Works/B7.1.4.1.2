@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Rate Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Unit Rate Calculation and Language Quiz ⚡</h1>
+        <p class="objective">Objective 7.1.4.1.2: Use the concept of a unit rate (a/b) and rate language.</p>
+        
+        <div id="start-screen">
+            <p>This quiz tests your ability to calculate unit rates and interpret rate language ('per', 'for each').</p>
+            <p>Each question is worth 10 points. Total Score: 100.</p>
+            <button id="start-button">Start Game</button>
+        </div>
+
+        <div id="quiz-area" style="display:none;">
+            <p class="score-display">Score: <span id="current-score">0</span> / 100</p>
+            <p class="question-counter">Question <span id="q-counter">1</span> of 10</p>
+
+            <div class="question-box">
+                <p id="question-text">Question content will appear here...</p>
+                <div class="options" id="options-container">
+                    </div>
+                <p id="rationale-display" class="rationale-text"></p>
+                <button id="next-button" style="display:none;">Next Question</button>
+            </div>
+        </div>
+
+        <div id="game-over-screen" style="display:none;">
+            <h2>Game Over! 🏆</h2>
+            <p>You completed the assessment.</p>
+            <p class="final-score">Final Score: <span id="final-score">0</span> / 100</p>
+            <button id="restart-button">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
