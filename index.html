@@ -9,7 +9,7 @@
 <body>
     <div class="quiz-container">
         <h1>Unit Rate Calculation and Language Quiz ⚡</h1>
-        <p class="objective">Objective 7.1.4.1.2: Use the concept of a unit rate (a/b) and rate language.</p>
+        <p class="objective">B7.1.4.1.2: Use the concept of a unit rate (a/b) and rate language.</p>
         
         <div id="start-screen">
             <p>This quiz tests your ability to calculate unit rates and interpret rate language ('per', 'for each').</p>
@@ -24,7 +24,8 @@
             <div class="question-box">
                 <p id="question-text">Question content will appear here...</p>
                 <div class="options" id="options-container">
-                    </div>
+                    <!-- Options will be inserted by JavaScript -->
+                </div>
                 <p id="rationale-display" class="rationale-text"></p>
                 <button id="next-button" style="display:none;">Next Question</button>
             </div>
@@ -37,6 +38,11 @@
             <button id="restart-button">Play Again</button>
         </div>
     </div>
+
+    <!-- Sound effects -->
+    <audio id="correct-sound" src="asset/brass-fanfare-reverberated-146263.mp3" preload="auto"></audio>
+    <audio id="wrong-sound" src="asset/cartoon-fail-trumpet-278822.mp3" preload="auto"></audio>
+
     <script src="script.js"></script>
 </body>
 </html>
